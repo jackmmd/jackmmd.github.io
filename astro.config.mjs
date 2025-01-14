@@ -30,5 +30,5 @@ export default defineConfig({
 		}),
 	],
 	site: 'https://jackmmd.github.io',
-	base:'jackmmd.github.io'
+	base:''
 });
