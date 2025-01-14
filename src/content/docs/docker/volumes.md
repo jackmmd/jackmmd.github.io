@@ -93,7 +93,7 @@ docker volume rm my_volume
 #### Usar un Directorio del Host como Volume
 Crea un directorio y dos archivos dentro:
 ```bash
-mkdir /home/duberly/my_host_directory && cd my_host_directory
+mkdir /home/jackmmd/my_host_directory && cd my_host_directory
 echo '<h1>index</h1>' >> index.html
 echo '<h1>about</h1>' >> about.html
 ls
@@ -105,7 +105,7 @@ about.html  index.html
 
 Crea un contenedor usando `my_host_directory` como volume:
 ```bash
-docker run -d --name my_apache_container -p 8080:80 -v /home/duberly/my_host_directory:/usr/local/apache2/htdocs httpd
+docker run -d --name my_apache_container -p 8080:80 -v /home/jackmmd/my_host_directory:/usr/local/apache2/htdocs httpd
 ```
 
 Accede al contenedor y navega al directorio `htdocs`:

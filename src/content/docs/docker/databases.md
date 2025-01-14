@@ -26,12 +26,12 @@ mysql -u root -p
 
 Exportar una base de datos local desde un contenedor
 ```bash
-docker exec mymysql /usr/bin/mysqldump -u root --password=duberly2004 db_digcru > backup.sql
+docker exec mymysql /usr/bin/mysqldump -u root --password=jackmmd2004 db_digcru > backup.sql
 ```
 
 Importar una base de datos a un contenedor
 ```bash
-cat db_digcru_script.sql | docker exec -i mymysql /usr/bin/mysql -u root --password=duberly2004 db_digcru
+cat db_digcru_script.sql | docker exec -i mymysql /usr/bin/mysql -u root --password=jackmmd2004 db_digcru
 ```
 
 ##### Para una base de datos en producción
