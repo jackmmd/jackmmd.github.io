@@ -29,4 +29,6 @@ export default defineConfig({
 			],
 		}),
 	],
+	site: 'https://jackmmd.github.io',
+	base:''
 });
