@@ -7,7 +7,7 @@ export default defineConfig({
 	integrations: [
 		tailwind(),
 		starlight({
-			title: 'Notas',
+			title: 'Ciberseguridad y Hacking Ético',
 			social: {
 				github: 'https://github.com/jackmmd',
 				tiktok: 'https://www.tiktok.com/@jackmmd',
