@@ -24,6 +24,10 @@ export default defineConfig({
 					autogenerate: { directory: 'linux' },
 				},
 				{
+					label: 'Apache',
+					autogenerate: { directory: 'apache' },
+				},
+				{
 					label: 'Overthewire',
 					autogenerate: { directory: 'overthewire' },
 				},
