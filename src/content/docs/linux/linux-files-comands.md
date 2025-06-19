@@ -15,7 +15,7 @@ unzip my-app.zip
 ### Con python
 Desde la máquina donde tenemos el archivo a compartir
 ```bash
-python -m http:server 8080
+python -m http.server 8080
 ```
 Desde la otra máquina se descarga el archivo 
 ```bash
@@ -34,14 +34,14 @@ service ssh status
 # Activar el servicio ssh
 service ssh start
 
-# Enviar el archivo, perirá la contraseña de la máquina de destino
+# Enviar el archivo, pedirá la contraseña de la máquina de destino
 scp archivo.zip usuario@IP_DESTINO:/ruta/de/destino
 
 scp my-app.zip kali@192.168.500.39:/home/kali
 ```
 ### Con rsync (más control y resumes)
 ```bash
-# Enviar el archivo, perirá la contraseña de la máquina de destino
+# Enviar el archivo, pedirá la contraseña de la máquina de destino
 rsync -avz archivo.zip usuario@IP_DESTINO:/ruta/destino
 
 rsync -avz my-app.zip kali@192.168.500.39:/home/kali
